@@ -6,6 +6,11 @@ $(document).ready(function(){
     var city = $("#city").val();
     var state = $("#state").val();
     var zipcode = $("#zipcode").val();
-    window.location.href = "file:///Users/Guest/desktop/marketplace/receipt.html";
+    var combine = (city + ", " + state + " " + zipcode);
+    $(".fullName").text(name);
+    $("#street2").text(street);
+    $("#combine").text(combine);
+    $("#receipt").fadeIn();
+    $("#nameAddress").hide();
   });
 });

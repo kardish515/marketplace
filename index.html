@@ -8,6 +8,7 @@
     <script src="js/scripts.js"></script>
   </head>
   <body>
+    <h1 id ="header">The Online Marketplace</h1>
     <div class="container">
       <form id="nameAddress">
         <div class="form-group">
@@ -23,8 +24,13 @@
           <input id="city" class="form-control" type="text">
         </div>
         <div class="form-group">
-          <label for="state">State:</label>
-          <input id="state" class="form-control" type="text">
+          <p id="stateSelector">State:</p>
+          <select class="form-control" id="state">
+            <option>CA</option>
+            <option>ID</option>
+            <option>OR</option>
+            <option>WA</option>
+          </select>
         </div>
         <div class="form-group">
           <label for="zipcode">Zipcode:</label>
@@ -32,6 +38,13 @@
         </div>
         <button type="submit" class="btn btn-secondary">Submit</button>
       </form>
+      <div id="receipt">
+        <h1>Thank you for your order, <span class="fullName"></span>!</h1>
+        <h2>Please review the following shipping details:</h2>
+        <p class="fullName"></p>
+        <p id="street2"></p>
+        <p id="combine"></p>
+      </div>
     </div>
   </body>
 </html>

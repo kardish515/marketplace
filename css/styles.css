@@ -1,0 +1,25 @@
+#receipt {
+  display: none;
+}
+
+#receipt p {
+  margin: -5px 0px;
+}
+
+p#stateSelector {
+  margin: 6px 0px;
+}
+h1#header{
+  text-align: center;
+}
+body{
+  background-color: #06ddbd;
+}
+
+.container {
+  width: 75%;
+  margin: 0px 125px;
+  border: 1px solid black;
+  background-color: #f94fff;
+  padding: 10px;
+}
